@@ -3,8 +3,8 @@
 %bcond_without	tests	# do not perform "make test"
 #
 %include	/usr/lib/rpm/macros.perl
-%define		pdir	Speech
-%define		pnam	speech_pm
+%define	pdir	Speech
+%define	pnam	speech_pm
 Summary:	Speech::Synthesiser - speech output for Perl
 Summary(pl):	Speech::Synthesiser - wyj¶cie mowy dla Perla
 Name:		perl-speech
