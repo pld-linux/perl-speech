@@ -8,12 +8,12 @@ Summary:	Speech::Synthesiser - speech output for Perl
 Summary(pl):	Speech::Synthesiser - wyj¶cie mowy dla Perla
 Name:		perl-speech
 Version:	1.0
-Release:	1
+Release:	2
 License:	unknown
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pnam}_%{version}.tgz
 BuildRequires:	perl >= 5.6
-BuildRequires:	rpm-perlprov >= 3.0.3-16
+BuildRequires:	rpm-perlprov >= 4.1-13
 Requires:	festival
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -41,7 +41,8 @@ u¿ywajaca syntezatora festival.
 %{__perl} -pi -e 's/use Festival/use Speech::Festival/' test.pl
 
 %build
-%{__perl} Makefile.PL
+%{__perl} Makefile.PL \
+	INSTALLDIRS=vendor 
 %{__make}
 
 %{!?_without_tests:%{__make} test}
@@ -58,7 +59,7 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc Changes README.txt
-%{perl_sitelib}/Audio/*.pm
-%{perl_sitelib}/Speech/*.pm
-%{perl_sitelib}/Speech/Festival
+%{perl_vendorlib}/Audio/*.pm
+%{perl_vendorlib}/Speech/*.pm
+%{perl_vendorlib}/Speech/Festival
 %{_mandir}/man3/*
