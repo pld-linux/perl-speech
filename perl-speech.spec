@@ -9,7 +9,7 @@ Summary:	Speech::Synthesiser - speech output for Perl
 Summary(pl):	Speech::Synthesiser - wyj¶cie mowy dla Perla
 Name:		perl-speech
 Version:	1.0
-Release:	2
+Release:	3
 License:	unknown
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pnam}_%{version}.tgz
