@@ -36,12 +36,12 @@ u¿ywajaca syntezatora festival.
 %prep
 %setup -q -n %{pnam}_%{version}
 # workaround and fixes for broken file locations
-perl -pi -e 's/Speech::Synthesiser/Speech/' Makefile.PL
-perl -pi -e 's/Speech::Speech::Festival/Speech::Festival/' Speech/Festival.pm
-perl -pi -e 's/use Festival/use Speech::Festival/' test.pl
+%{__perl} -pi -e 's/Speech::Synthesiser/Speech/' Makefile.PL
+%{__perl} -pi -e 's/Speech::Speech::Festival/Speech::Festival/' Speech/Festival.pm
+%{__perl} -pi -e 's/use Festival/use Speech::Festival/' test.pl
 
 %build
-perl Makefile.PL
+%{__perl} Makefile.PL
 %{__make}
 
 %{!?_without_tests:%{__make} test}
