@@ -12,6 +12,7 @@ Release:	2
 License:	unknown
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pnam}_%{version}.tgz
+# Source0-md5:	49666e75d6014c9f521a582fb0f531ce
 BuildRequires:	perl-devel >= 5.6
 BuildRequires:	rpm-perlprov >= 4.1-13
 Requires:	festival
