@@ -33,7 +33,7 @@ using the festival speech synthesiser is included.
 To jest prosty modu³ Perla udostêpniaj±cy programom mo¿liwo¶æ mówienia
 przy u¿yciu syntezatora mowy. Interfejs jest zaprojektowany z my¶l± o
 mo¿liwo¶ci u¿ycia dowolnego syntezatora. Do³±czona jest implementacja
-u¿ywajaca syntezatora festival.
+u¿ywaj±ca syntezatora festival.
 
 %prep
 %setup -q -n %{pnam}_%{version}
