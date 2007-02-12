@@ -6,7 +6,7 @@
 %define		pdir	Speech
 %define		pnam	speech_pm
 Summary:	Speech::Synthesiser - speech output for Perl
-Summary(pl):	Speech::Synthesiser - wyj¶cie mowy dla Perla
+Summary(pl.UTF-8):   Speech::Synthesiser - wyjÅ›cie mowy dla Perla
 Name:		perl-speech
 Version:	1.0
 Release:	3
@@ -29,11 +29,11 @@ programs to speak using a speech synthesiser. The interface is
 intended to allow any synthesiser to be plugged in. An implementation
 using the festival speech synthesiser is included.
 
-%description -l pl
-To jest prosty modu³ Perla udostêpniaj±cy programom mo¿liwo¶æ mówienia
-przy u¿yciu syntezatora mowy. Interfejs jest zaprojektowany z my¶l± o
-mo¿liwo¶ci u¿ycia dowolnego syntezatora. Do³±czona jest implementacja
-u¿ywaj±ca syntezatora festival.
+%description -l pl.UTF-8
+To jest prosty moduÅ‚ Perla udostÄ™pniajÄ…cy programom moÅ¼liwoÅ›Ä‡ mÃ³wienia
+przy uÅ¼yciu syntezatora mowy. Interfejs jest zaprojektowany z myÅ›lÄ… o
+moÅ¼liwoÅ›ci uÅ¼ycia dowolnego syntezatora. DoÅ‚Ä…czona jest implementacja
+uÅ¼ywajÄ…ca syntezatora festival.
 
 %prep
 %setup -q -n %{pnam}_%{version}
