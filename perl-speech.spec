@@ -6,7 +6,7 @@
 %define		pdir	Speech
 %define		pnam	speech_pm
 Summary:	Speech::Synthesiser - speech output for Perl
-Summary(pl.UTF-8):   Speech::Synthesiser - wyjście mowy dla Perla
+Summary(pl.UTF-8):	Speech::Synthesiser - wyjście mowy dla Perla
 Name:		perl-speech
 Version:	1.0
 Release:	3
