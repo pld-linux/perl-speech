@@ -1,10 +1,10 @@
 #
 # Conditional build:
 %bcond_without	tests	# do not perform "make test"
-#
-%include	/usr/lib/rpm/macros.perl
+
 %define		pdir	Speech
 %define		pnam	speech_pm
+%include	/usr/lib/rpm/macros.perl
 Summary:	Speech::Synthesiser - speech output for Perl
 Summary(pl.UTF-8):	Speech::Synthesiser - wyjście mowy dla Perla
 Name:		perl-speech
@@ -14,6 +14,7 @@ License:	unknown
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pnam}_%{version}.tgz
 # Source0-md5:	49666e75d6014c9f521a582fb0f531ce
+URL:		http://search.cpan.org/dist/speech_pm/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 Requires:	festival
