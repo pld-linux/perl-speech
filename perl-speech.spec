@@ -4,7 +4,6 @@
 
 %define		pdir	Speech
 %define		pnam	speech_pm
-%include	/usr/lib/rpm/macros.perl
 Summary:	Speech::Synthesiser - speech output for Perl
 Summary(pl.UTF-8):	Speech::Synthesiser - wyjście mowy dla Perla
 Name:		perl-speech
